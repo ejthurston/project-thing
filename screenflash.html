@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html> 
+    <head><title>ScreenFlash</title></head>
+    <body bgcolor="#ff0000">
+        Press space to flash screen!
+    </body>
+    <script lang="javascript">
+
+function randomhex()
+{
+    let newHex = Math.floor(Math.random()*16777215).toString(16);
+    return "#"+newHex;
+}
+
+function SpacePressCheck()
+{
+    document.onkeypress = function (eventKeyName) {
+      eventKeyName = eventKeyName || window.event;
+      if(eventKeyName.keyCode==32){
+         console.log('You have pressed space key');
+         SetBGColor(randomhex());
+      } else {
+         alert(String.fromCharCode(eventKeyName.keyCode))
+   }
+};
+}
+
+function SetBGColor(color)
+{
+    document.body.style.backgroundColor=color;
+}
+document.onload
+{
+    SetBGColor(randomhex());
+    SpacePressCheck();
+}
+    </script>
+</html>
