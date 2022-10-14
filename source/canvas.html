@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Pixel Art</title>
+    <link rel="stylesheet" href="./scripts/canvas.css">
+    <script src="./js/canvas.js" defer></script>
+</head>
+<style>
+    a {
+        color: #ffffff;
+        text-decoration: underline;
+    }
+</style>
+<body>
+    <div>
+        <div id="guide"></div>
+        <canvas width="450" height="450" id="canvas"></canvas>
+    </div>
+    <div>
+        <label for="colorInput">Set Color:</label>
+        <input type="color" id="colorInput">
+    </div>
+    <div>
+        <label for="toggleGuide">showGuide</label>
+        <input type="checkbox" id="toggleGuide" checked>
+    </div>
+    <div>
+        <button type="button" id="clearButton">Clear Canvas</button>
+    </div>
+    Click on the grid to draw. Control click to get a color from the grid. Right click on the canvas to download your picture,
+   <a href="./index.html">and click here to go back to the main page.</a>
+</body>
+</html>
