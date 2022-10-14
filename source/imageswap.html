@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html><head>
+
+    <a href="index.html">go back</a>
+    <meta http-equiv="content-type" content="text/html"; charset="UTF-8">
+    <title>ImageSwap</title>
+    <script type="text/javascript">
+        function swap() {
+            var leftID = document.getElementById('pic_left');
+                rightID = document.getElementById('pic_right');
+                leftSRC = leftID.src;
+                rightSRC = rightID.src;
+            leftID.src = rightSRC
+            rightID.src = leftSRC;
+        }
+    </script>
+</head>
+<body>
+    <div align="center">
+        <img id="pic_left" src="img/JackSucksAtLife.webp">
+        <img id="pic_right" src="img/JackSucksAtStuff.webp">
+        <form>
+            <input type="button" value="SWAP!" onclick="swap();">
+        </form>
+    </div>
+</body>
