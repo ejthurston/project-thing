@@ -3,28 +3,50 @@
 
 <head>
     <title>
-        Project Thing
+        Project Thing *under construction*
     </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="scripts/site.css" />
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./scripts/site.css">
 </head>
-
-<body>
-    <h1>
-        Hello!
-    </h1>
-    <h2>This is where all my projects are stored</h2>
-    <a href="screenflash.html">ScreenFlash</a>
-    <a href="wheel.html">Hogwarts House Wheel</a>
-    <a href="comment.html">simple comment box</a>
-    <a href="imageswap.html">imageswap</a>
-    <a href="canvas.html">5x5 Canvas Pixel Art</a>
+<body class="nav-closed">
+    <nav class="nav">
+        <button type="button" class="nav-close">
+            <ion-icon name="close-outline" size="large"></ion-icon>
+        </button>
+        <div class="nav-links-container">
+            <a href="projects.html" class="nav-link">
+                <span class="nav-text">My Projects</span>
+                <ion-icon name="code-outline" size="large"></ion-icon>
+            </a>
+            <a href="screenflash.html" class="nav-link">
+                <span class="nav-text">My First Project</span>
+                <ion-icon name="code-slash-outline" size="large"></ion-icon>
+            </a>
+            <a href="about.html" class="nav-link">
+                <span class="nav-text">About Me</span>
+                <ion-icon name="person-outline" size="large"></ion-icon>
+            </a>
+            <a href="contactme.html" class="nav-link">
+                <span class="nav-text">Contact Me</span>
+                <ion-icon name="call-outline" size="large"></ion-icon>
+            </a>
+        </div>
+    </nav>
+    <main class="main">
+        <button type="button" class="nav-open-button">
+            <ion-icon name="menu-outline" size="large"></ion-icon>
+            <header>Hello!</header>
+            <h1>Welcome to my site!</h1>
+            <p>
+                <h2>Press the hamburger icon to see everything else on my site.</h2>
+            </p>
+        </button>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="./js/main.js"></script>
 </body>
-
-
-
-
 </html>
 
