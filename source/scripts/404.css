@@ -1,0 +1,18 @@
+.error {
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.body {
+    background-color: red;
+}
+
+.text-error-number {
+    font-weight: 500;
+    color: #000521;
+}
+.text-error-reason {
+    font-weight: 400;
+    color: #000521;
+}
